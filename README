@@ -1,0 +1,15 @@
+https://leetcode.com/problems/container-with-most-water/
+
+Given n non-negative integers a1, a2, ..., an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i is at (i, ai) and (i, 0). Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.
+
+Notice that you may not slant the container.
+
+
+Two Pointer
+
+O(n) single pass time complexity
+O(1) constant space
+
+The area formed between the lines will always be limited by the height of the shorter line. To find the area, start at the begining and end, subtract the shorter of the two lines, calculate the distance between the two lines, multiple those values for the area; save it to max area if it is greater than the current max area.
+
+Increment only the shorter of the two, left or right when working through the problem
